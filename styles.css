@@ -103,6 +103,9 @@ em.serif-italic, .serif-italic { font-family: var(--serif); font-style: italic; 
   line-height: 1;
 }
 .brand-mark.lg { font-size: 3rem; }
+.brand-logo { width: 36px; height: 36px; display: block; }
+.brand-logo.lg { width: 84px; height: 84px; }
+.hero-seal { width: 56px; height: 56px; display: block; margin: 0 auto 1.25rem; opacity: 0.9; }
 .brand-name {
   font-size: 0.75rem;
   letter-spacing: 0.22em;
@@ -728,6 +731,11 @@ em.serif-italic, .serif-italic { font-family: var(--serif); font-style: italic; 
 .c-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; }
 @media (max-width: 1060px) { .flywheel-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 680px) { .flywheel-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) {
+  .brand-logo { width: 28px; height: 28px; }
+  .brand-logo.lg { width: 64px; height: 64px; }
+  .hero-seal { width: 48px; height: 48px; }
+}
 
 /* ============================================================
    Personas
