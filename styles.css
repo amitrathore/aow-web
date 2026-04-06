@@ -1226,6 +1226,14 @@ em.serif-italic, .serif-italic { font-family: var(--serif); font-style: italic; 
 }
 .blog-shifts p:last-child { margin-bottom: 0 !important; }
 
+.blog-figure {
+  margin: 2.5rem 0;
+}
+.blog-figure img {
+  width: 100%;
+  border: 1px solid var(--rule-soft);
+}
+
 .blog-cta {
   margin-top: 4rem;
   padding-top: 3rem;
