@@ -1186,6 +1186,31 @@ em.serif-italic, .serif-italic { font-family: var(--serif); font-style: italic; 
   top: 0.35rem;
 }
 .blog-article strong { color: var(--cream); font-weight: 500; }
+.blog-article ol.blog-numbered {
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  counter-reset: blog-step;
+}
+.blog-article ol.blog-numbered li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--parchment);
+  margin-bottom: 0.75rem;
+  counter-increment: blog-step;
+  list-style: none;
+}
+.blog-article ol.blog-numbered li::before {
+  content: counter(blog-step);
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 0.9rem;
+  top: 0.1rem;
+}
 .blog-article em { font-family: var(--serif); font-style: italic; }
 
 .blog-article blockquote {
